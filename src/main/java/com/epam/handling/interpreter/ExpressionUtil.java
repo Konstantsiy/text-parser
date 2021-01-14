@@ -37,7 +37,7 @@ public class ExpressionUtil {
         }
     }
 
-    public static String getReversePolishRecord(String expression) {
+    public static String buildReversePolishRecord(String expression) {
         Stack<String> stack = new Stack<>();
         List<String> resultList = new ArrayList<>();
         boolean unaryFlag = false;

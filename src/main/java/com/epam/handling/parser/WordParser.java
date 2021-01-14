@@ -59,7 +59,7 @@ public class WordParser extends AbstractParser {
                 wordComposite = new Composite(Separator.FOR_SYMBOLS, ComponentType.EXPRESSION);
                 logger.debug("[(" + word + ") => ");
                 word = parseExpression(word);
-                String polishRecord = ExpressionUtil.getReversePolishRecord(word);
+                String polishRecord = ExpressionUtil.buildReversePolishRecord(word);
                 logger.debug("(" + polishRecord + ") => ");
                 int number = ExpressionUtil.calculateReversePolishRecord(polishRecord);
                 word = String.valueOf(number);
